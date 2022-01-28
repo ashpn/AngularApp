@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Master Menu</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Restaurant Name</th>
+                <th>Address</th>
+                <th>Contact No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let dataItem of RestList">
+                <td>{{dataItem.s_Name}}</td>
+                <td>{{dataItem.s_Address}}</td>
+                <td>{{dataItem.s_Contact}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

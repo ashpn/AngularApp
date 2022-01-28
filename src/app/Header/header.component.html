@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Angular App 4</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="home" routerLinkActive="active-link">Home <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="master" routerLinkActive="active-link">Master</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="reports" routerLinkActive="active-link">Reports</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-toggle="dropdown" aria-expanded="false">
+                    Transactions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" routerLink="obligation" routerLinkActive="active-link">Obligation
+                        Generation</a>
+                    <a class="dropdown-item" routerLink="accountposting" routerLinkActive="active-link">Account
+                        Posting</a>
+                    <a class="dropdown-item" routerLink="eod" routerLinkActive="active-link">EOD</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+            <li class="dropdown order-1">
+                <button type="button" id="dropdownMenu1" class="btn btn-outline-light"
+                    (click)="logout()">Logout</button>
+
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
